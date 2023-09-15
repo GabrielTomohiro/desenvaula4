@@ -10,6 +10,10 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary"><a href="/editar/{{id}}" style="color:inherit">Edit</a></button>
+                        <button type="button" class="btn btn-danger"><a href="/excluir/{{id}}" style="color:inherit">Del</a></button>
+                    </div>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-link active" aria-current="page" href="/">Cadastrar</a>
@@ -48,20 +52,24 @@
                         <input type="name" name="nome" class="form-control" id="nome">
                     </div>
                     <div class="mb-3 text-start">
-                        <label class="form-label">Telefone:</label>
-                        <input type="number" name="telefone" class="form-control" id="telefone">
+                        <label class="form-label">Endereco:</label>
+                        <input type="text" name="endereco" class="form-control" id="endereco">
                     </div>
                     <div class="mb-3 text-start">
-                        <label class="form-label">Origem:</label>
-                        <select name="origem" class="form-select" aria-label="Default select example">
-                            <option value="celular" selected>Celular</option>
-                            <option value="whatsapp">Whatsapp</option>
-                            <option value="telefone_fixo">Telefone Fixo</option>
-                        </select>
+                        <label class="form-label">Bairro:</label>
+                        <input type="text" name="bairro" class="form-control" id="bairro">
                     </div>
                     <div class="mb-3 text-start">
-                        <label class="form-label">Data do Contato:</label>
-                        <input type="date" name="data_contato" class="form-control" id="data_contato" aria-describedby="emailHelp">
+                        <label class="form-label">cep:</label>
+                        <input type="number" name="cep" class="form-control" id="cep">
+                    </div>
+                    <div class="mb-3 text-start">
+                        <label class="form-label">cidade:</label>
+                        <input type="text" name="cidade" class="form-control" id="cidade">
+                    </div>
+                    <div class="mb-3 text-start">
+                        <label class="form-label">estado:</label>
+                        <input type="text" name="estado" class="form-control" id="estado">
                     </div>
                     <div class="mb-3 text-start">
                         <label class="form-label">Observação:</label>
